@@ -5,8 +5,10 @@ let elCanvasBtn = document.getElementById("canvasBtn");
 let elCanvasBox = document.getElementById("canvasBox");
 let elBackBtn = document.getElementById("backBtn");
 let elCanvasBtnTwo = document.getElementById("canvasBtnTwo");
+let elCanvasBoxTwo = document.getElementById("canvasBoxTwo");
 let elBackBtnTwo = document.getElementById("backBtnTwo");
 let elCanvasBtnThree = document.getElementById("canvasBtnThree");
+let elCanvasBoxThree = document.getElementById("canvasBoxThree");
 let elBackBtnThree = document.getElementById("backBtnThree");
 let count = 0;
 
@@ -30,17 +32,31 @@ elBackBtn.addEventListener("click", function() {
 })
 
 elCanvasBtnTwo.addEventListener("click", function(){
-  elCanvasBox.classList.add("show-them");
+  elCanvasBoxTwo.classList.add("show-them");
 })
 
 elBackBtnTwo.addEventListener("click", function() {
-  elCanvasBox.classList.remove("show-them")
+  elCanvasBoxTwo.classList.remove("show-them")
 })
 
 elCanvasBtnThree.addEventListener("click", function(){
-  elCanvasBox.classList.add("show-them");
+  elCanvasBoxThree.classList.add("show-them");
 })
 
 elBackBtnThree.addEventListener("click", function() {
-  elCanvasBox.classList.remove("show-them")
+  elCanvasBoxThree.classList.remove("show-them")
 })
+
+window.onscroll = () => {scrollNavbar()};
+
+scrollNavbar = () => {
+
+  const up = document.getElementById("up");
+
+  if (document.documentElement.scrollTop > 1) {
+    up.classList.add("pa-up");
+  } 
+  else {
+    up.classList.remove("pa-up");
+  }
+} 
