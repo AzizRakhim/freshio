@@ -1,0 +1,380 @@
+.hero-about{
+  background-color: $white-color !important;
+}
+
+.big-container{
+  width: 100%;
+  max-width: 1710px !important;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+
+.site-header{
+  background-color: $white-color;
+}
+
+.header-intro-about{
+  padding: 0 !important;
+}
+
+.header__navbar{
+  width: 100%;
+  max-width: 100%;
+}
+
+.header__navbar{
+  .about-dropdown{
+    &::after{
+      display: none;
+    }
+  }
+}
+
+.nav-btn-about{
+  background-color: $primary-color;
+  border-radius: 30px;
+  color: $white-color;
+
+  &:hover{
+    background-color: $primary-color;
+  }
+}
+
+.number-about{
+  .bx{
+    font-size: 36px;
+    color: $primary-color;
+    margin-right: 20px;
+  }
+}
+
+.number-call-about{
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  color: $text-color;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.number-call-link-about{
+  margin-bottom: 0;
+  color: $primary-color;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover{
+    color: $primary-color;
+  }
+}
+
+.number-about{
+  margin-right: 50px;
+}
+
+.num-holder-about{
+  width: auto;
+  margin-left: auto;
+}
+
+.hero-intro-about{
+  background-color: $white-color;
+  margin-bottom: 0 !important;
+}
+
+.hero-intro-about{
+  background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_bg-breadcrumb.jpg?v=1605078920');
+  min-height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0 !important;
+}
+
+.breadcrumb{
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0 !important;
+}
+
+.breadcrumb-item{
+  a, 
+  .breadcrumb-item.active{
+    color: #555;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.25em;
+    transition: all 0.3s;
+
+    &:hover{
+      color: $primary-color !important;
+    }
+  }
+
+}
+
+.breadcrumb-item.active{
+  color: #555 !important;
+  font-size: 0.875rem;
+  line-height: 0;
+
+  &::before{
+    display: none;
+  }
+
+  .bx{
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+
+// HERO END
+// MAIN START
+
+#about-us{
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: $white-color;
+}
+
+.about-us__title{
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #0a472e;
+}
+
+.about-us__wrapper{
+  padding: 1.25rem;
+}
+
+.about-us__list{
+  @include list-style;
+}
+
+.about-us__inner-title{
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #0a472e;
+}
+
+.about-us__text{
+  font-size: .875rem;
+  color: #aaa;
+  line-height: 1.25em;
+  text-align: justify;
+}
+
+.about-us__inner-list{
+  @include list-style;
+}
+
+.about-us__item{
+  &:first-child{
+    padding-right: 15px;
+  }
+
+  &:nth-child(2){
+    padding: 0 15px;
+  }
+
+  &:last-child{
+    padding-left: 15px;
+  }
+}
+
+// ABOUT-US END
+// ABOUT-CONTACT START
+
+#about-contact{
+  background-color: $white-color;
+  padding: 50px 0;
+}
+
+.middle-container{
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.about-contact__list{
+  @include list-style;
+}
+
+.about-contact__cards{
+  margin-left: auto;
+
+  img{
+    display: inline-block;
+  }
+}
+
+.about-contact{
+  .number-about{
+    margin: 0;
+
+    .bx{
+      font-size: 48px;
+    }
+
+    .number-call-about{
+      margin-bottom: 13px;
+    }
+
+    .number-call-link-about{
+      font-size: 20px;
+    }
+
+    &:last-child{
+      .number-call-link-about{
+        font-size: 14px;
+        display: inline-block;
+        color: $text-color;
+        position: relative;
+
+        &::after{
+          content: '';
+          width: 100%;
+          display: block;
+          height: 1px;
+          background-color: $primary-color;   
+        }
+      }
+    }
+  }
+}
+
+.about-contact__item{
+  &:not(:last-child){
+    padding-right: 20px;
+  }
+
+  .bx{
+    font-size: 20px;
+    color: $primary-color;
+    transition: all 0.3s;
+  }
+
+  .bxl-facebook{
+    &:hover{
+      color: #3c5a98;
+    }
+  }
+
+  .bxl-twitter{
+    &:hover{
+      color: #55acee;
+    }
+  }
+
+  .bxl-youtube{
+    &:hover{
+      color: #e84542;
+    }
+  }
+
+  .bxl-instagram{
+    &:hover{
+      color: #4c61b0;
+    }
+  }
+}
+
+.about-contact__card-link{
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s;
+  float: right;
+
+  &:hover{
+    opacity: 0.75;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .number-about{
+    display: none !important;
+  }
+
+  .middle-container{
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+  }
+
+  .about-contact__mail{
+    .number-about{
+      margin-bottom: 30px;      
+      display: flex !important;
+    }
+  }
+
+  .about-contact__card-link{
+    float: left;
+  }
+
+  .about-contact__social{
+    margin-top: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-intro-about{
+    min-height: 150px !important;
+  }
+
+  .breadcrumb{
+    min-height: 150px !important;
+  }
+
+  .about-contact__mail{
+    flex-direction: column;
+
+    .number-about{
+      width: 100%;  
+      flex-direction: column;
+      text-align: center;
+
+      .bx{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .about-contact__social{
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .about-contact__cards{
+    display: flex;
+    justify-content: center;
+    
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-us__list{
+    flex-direction: column;
+  }
+
+  .about-us__item{
+    &:first-child{
+      margin-bottom: 16px;
+    }
+
+    &:nth-child(2){
+      padding-left: 0 !important;
+    }
+
+    &:last-child{
+      padding-left: 0;
+    }
+  }
+}

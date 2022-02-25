@@ -9,16 +9,18 @@
   margin-top: 30px;
 }
 
-.carousel-item{
-  background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  height: 650px;
-  padding-right: 15px;
-  position: relative !important;
-
-  &:nth-child(2){
-    background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide1.jpg?v=1614305184');
+.hero-intro{
+  .carousel-item{
+    background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 650px;
+    padding-right: 15px;
+    position: relative !important;
+  
+    &:nth-child(2){
+      background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide1.jpg?v=1614305184');
+    }
   }
 }
 
@@ -298,54 +300,59 @@
   }
 }
 
-.carousel{
-  position: relative;
-}
-
-.btn-box{
-  position: absolute;
-  bottom: 84px;
-  right: 42px;
-  width: 105px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.carousel-control-prev{
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  opacity: 1;
-  border-radius: 50%;
-  transition: all 0.3s;
-
-  &:hover{
-    background-color: $primary-color;
+.hero-intro{
+  .carousel{
+    position: relative;
   }
 }
 
-.carousel-control-next{
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  opacity: 1;
-  border-radius: 50%;
-
-  transition: all 0.3s;
-
-  &:hover{
-    background-color: $primary-color;
+.hero-intro{
+  .btn-box{
+    position: absolute;
+    bottom: 84px;
+    right: 42px;
+    width: 105px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel-control-prev{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 50%;
+    transition: all 0.3s;
+  
+    &:hover{
+      background-color: $primary-color;
+    }
+  }
+  
+  .carousel-control-next{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 50%;
+  
+    transition: all 0.3s;
+  
+    &:hover{
+      background-color: $primary-color;
+    }
+  }
+  
+  .carousel-control-prev-icon, 
+  .carousel-control-next-icon{
+    background-image: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 40px;
+    display: inline-block;
   }
 }
 
-.carousel-control-prev-icon, 
-.carousel-control-next-icon{
-  background-image: none;
-  color: #000;
-  font-size: 20px;
-  line-height: 40px;
-  display: inline-block;
-}
 
 @media screen and (max-width: 1220px) {
   .container{
@@ -353,8 +360,10 @@
     max-width: 960px;
   }
 
-  .carousel-item{
-    height: 477px;
+  .hero-intro{
+    .carousel-item{
+      height: 477px;
+    }
   }
 
   .img-desc__title{
@@ -371,12 +380,14 @@
     width: 100%;
   }
 
-  .carousel-item{
-    position: relative;
-    padding-right: 0;
-    background-size: cover;
-    margin-bottom: 23px;
-    height: 564px;
+  .hero-intro{
+    .carousel-item{
+      position: relative;
+      padding-right: 0;
+      background-size: cover;
+      margin-bottom: 23px;
+      height: 564px;
+    }
   }
 
   .hero-intro__img-box{
@@ -396,8 +407,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-item{
-    height: 413px;
+  .hero-intro{
+    .carousel-item{
+      height: 413px;
+    }
   }
 
   .hero-intro__img-box{
@@ -419,6 +432,7 @@
     left: 50px;
     font-size: 15px;
   }
+  
   .hero-intro__text{
     top: 100px;
     left: 50px;
