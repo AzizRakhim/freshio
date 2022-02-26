@@ -3544,6 +3544,45 @@ input[type="number"]:focus {
   opacity: 0.75;
 }
 
+.about-footer {
+  background-color: #fff;
+  margin-bottom: 0;
+  border-top: 1px solid #e2e2e2;
+}
+
+.about-footer__link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-top__text {
+  color: #aaa;
+}
+
+.t-time {
+  color: #000;
+}
+
+.about-footer .footer-top__link {
+  color: #999;
+}
+
+.footer-bottom__span {
+  color: #999 !important;
+}
+
+.about-footer__link-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 1200px) {
   .number-about {
     display: none !important;
@@ -3564,6 +3603,14 @@ input[type="number"]:focus {
   }
   .about-contact__social {
     margin-top: 26px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-footer__link-box {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -3591,6 +3638,15 @@ input[type="number"]:focus {
   .about-contact__mail .number-about .bx {
     margin-right: 0;
   }
+  .about-contact__mail .about-footer .footer-top__wrapper {
+    margin-bottom: 30px !important;
+  }
+  .about-contact__mail .about-footer .footer-top__list {
+    margin-bottom: 30px !important;
+  }
+  .about-contact__mail .about-footer .footer-top__link {
+    color: #999;
+  }
   .about-contact__social {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3607,6 +3663,24 @@ input[type="number"]:focus {
   }
   .about-contact__cards img {
     width: 100%;
+  }
+  .about-footer__link-box {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: static;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .footer-top__title {
+    margin-top: 30px;
   }
 }
 
