@@ -3462,6 +3462,7 @@ input[type="number"]:focus {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .about-contact__list {
@@ -3537,7 +3538,6 @@ input[type="number"]:focus {
 }
 
 .about-contact__card-link {
-  display: inline-block;
   text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
