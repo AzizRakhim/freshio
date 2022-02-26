@@ -3701,4 +3701,23 @@ input[type="number"]:focus {
     padding-left: 0;
   }
 }
+
+#faq {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.faq__title {
+  margin-bottom: 8px;
+  font-size: 2em;
+}
+
+.f-contact {
+  padding-top: 100px;
+}
+
+.f-color {
+  background-color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
