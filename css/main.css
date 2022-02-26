@@ -2438,6 +2438,10 @@ body {
   border-bottom: none;
 }
 
+.modal-body {
+  min-height: 28.88rem;
+}
+
 .btn-close {
   width: 0.8rem !important;
   height: 0.8rem !important;
@@ -3928,6 +3932,9 @@ textarea:focus {
   }
   .info__optional {
     padding-left: 0;
+  }
+  .hidden__item:first-child {
+    display: none;
   }
 }
 

@@ -204,6 +204,12 @@ textarea{
   .info__optional{
     padding-left: 0;
   }
+
+  .hidden__item{
+    &:first-child{
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
